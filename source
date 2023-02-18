@@ -38,4 +38,8 @@ game:GetService("RunService").RenderStepped:Connect(function() workspace.Current
 MainSection:NewButton("Eyes", "Eyes POV.", function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Eyes", true).Core.CFrame end)
  end)
+local MainSection2 = Main:NewSection("Objects")
+MainSection:NewButton("Wardrobe", "Wardrobe POV.", function()
+game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Wardrobe", true).Main.CFrame end)
+ end)
 
