@@ -31,4 +31,7 @@ MainSection:NewButton("Figure[100]", "Figure POV.", function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame end)
 
  end)
+MainSection:NewButton("Eyes", "Eyes POV.", function()
+game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Eyes", true).Core.CFrame end)
+ end)
 
