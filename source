@@ -51,6 +51,10 @@ MainSection:NewButton("A120", "A120 POV.", function()
 
  end)
 
+MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
+
+       game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
+ end)
 
 local MainSection2 = Main:NewSection("Objects")
 MainSection2:NewButton("Wardrobe", "Wardrobe POV.", function()
