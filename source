@@ -56,22 +56,20 @@ MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
        game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
  end)
 
-MainSection:NewToggle("Realistic Cam", "Camera Shakes", function(state)
+local toggleState = false
 local player = game.Players.LocalPlayer
 local originalCFrame = workspace.CurrentCamera.CFrame
 
-game:GetService("RunService").RenderStepped:Connect(function()
-    if player.Character and player.Character:FindFirstChild("Head") then
-        workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    toggleState = state
+    if toggleState then
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if player.Character and player.Character:FindFirstChild("Head") then
+                workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
+            end
+        end)
     else
         workspace.CurrentCamera.CFrame = originalCFrame
     end
 end)
-
-end)
-
-local MainSection2 = Main:NewSection("Objects")
-MainSection2:NewButton("Wardrobe", "Wardrobe POV.", function()
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Wardrobe", true).Main.CFrame end)
- end)
 
