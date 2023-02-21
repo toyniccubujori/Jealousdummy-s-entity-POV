@@ -56,14 +56,35 @@ MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
        game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
  end)
 
-MainSection:NewButton("Realstic CAM", "Camera Shakes.", function()
-game:GetService("RunService").RenderStepped:Connect(function()
+MainSection:NewToggle("Realistic Cam", "Camera Shakes", function(state)
+    if state then
+        game:GetService("RunService").RenderStepped:Connect(function()
     local player = game.Players.LocalPlayer
     if player.Character and player.Character:FindFirstChild("Head") then
         workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
     end
 end)
 
+    else
+        local player = game.Players.LocalPlayer
+local camera = workspace.CurrentCamera
+
+-- Disconnect the camera script
+for _, connection in ipairs(game:GetService("RunService").RenderStepped:GetConnections()) do
+    if connection.Function == function()
+        if player.Character and player.Character:FindFirstChild("Head") then
+            camera.CFrame = player.Character.Head.CFrame
+        end
+    end then
+        connection:Disconnect()
+    end
+end
+
+-- Restore the main camera
+camera.CameraSubject = player.Character
+camera.CameraType = Enum.CameraType.Custom
+
+    end
 end)
 
 local MainSection2 = Main:NewSection("Objects")
