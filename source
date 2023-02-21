@@ -65,8 +65,6 @@ MainSection:NewButton("Realistic CAM"), "Camera Shakes.", function()
     end
 end)
 
- end)
-
 local MainSection2 = Main:NewSection("Objects")
 MainSection2:NewButton("Wardrobe", "Wardrobe POV.", function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Wardrobe", true).Main.CFrame end)
