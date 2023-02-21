@@ -60,7 +60,7 @@ local toggleState = false
 local player = game.Players.LocalPlayer
 local originalCFrame = workspace.CurrentCamera.CFrame
 
-Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+MainSection:NewToggle("ToggleText", "ToggleInfo", function(state)
     toggleState = state
     if toggleState then
         game:GetService("RunService").RenderStepped:Connect(function()
