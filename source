@@ -56,7 +56,7 @@ MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
        game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
  end)
 
-MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
+MainSection:NewButton("Realistic CAM"), "Camera Shakes.", function()
 
        game:GetService("RunService").RenderStepped:Connect(function()
     local player = game.Players.LocalPlayer
