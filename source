@@ -62,7 +62,6 @@ MainSection:NewButton("Realistic CAM"), "Camera Shakes.", function()
     local player = game.Players.LocalPlayer
     if player.Character and player.Character:FindFirstChild("Head") then
         workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
-    end
 end)
 
 local MainSection2 = Main:NewSection("Objects")
