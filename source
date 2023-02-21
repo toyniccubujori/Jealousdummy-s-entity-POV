@@ -57,23 +57,16 @@ MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
  end)
 
 MainSection:NewToggle("Realistic Cam", "Camera Shakes", function(state)
-    local player = game.Players.LocalPlayer
-local cameraConnected = true
+local player = game.Players.LocalPlayer
+local originalCFrame = workspace.CurrentCamera.CFrame
 
-local function updateCamera()
+game:GetService("RunService").RenderStepped:Connect(function()
     if player.Character and player.Character:FindFirstChild("Head") then
         workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
+    else
+        workspace.CurrentCamera.CFrame = originalCFrame
     end
-end
-
-game:GetService("RunService").RenderStepped:Connect(updateCamera)
-
-else
-cameraConnected = false
-
-if not cameraConnected then
-    game:GetService("RunService").RenderStepped:Disconnect()
-end
+end)
 
 end)
 
