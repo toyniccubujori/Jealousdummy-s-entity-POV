@@ -1,75 +1,2332 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+-- Gui to Lua
+-- Version: 3.2
 
-    local Window = Library.CreateLib("Jealousdummy Entity POV script", "Ocean")
+-- Instances:
 
-    local Main = Window:NewTab("POV")
+local Lib = Instance.new("ScreenGui")
+local Lib_2 = Instance.new("Frame")
+local LibFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local SepparateLine = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Minimise = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Icon = Instance.new("ImageLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local Tabs = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TemplateButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local TemplateButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local TemplateButton_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local TemplateButton_4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local TemplateButton_5 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local TabContent = Instance.new("Frame")
+local Info = Instance.new("Frame")
+local Username = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local UserID = Instance.new("TextLabel")
+local AccountAge = Instance.new("TextLabel")
+local JID = Instance.new("TextLabel")
+local IsPremium = Instance.new("TextLabel")
+local DisplayName = Instance.new("TextLabel")
+local BasicScripts = Instance.new("Frame")
+local ResetCharacter = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local WalkSpeed = Instance.new("Frame")
+local Change = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local Value = Instance.new("TextBox")
+local UICorner_12 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
+local JumpPower = Instance.new("Frame")
+local Change_2 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local Value_2 = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local Gravity = Instance.new("Frame")
+local Change_3 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIGradient_11 = Instance.new("UIGradient")
+local Value_3 = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
+local FOV = Instance.new("Frame")
+local Change_4 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local Value_4 = Instance.new("TextBox")
+local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
+local Settings = Instance.new("Frame")
+local Draggable = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local UIGradient_13 = Instance.new("UIGradient")
+local Toggle = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Name = Instance.new("TextLabel")
+local IY = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+local LicenseInfo = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TemplateFrame = Instance.new("Frame")
+local TemplateBtns = Instance.new("ScrollingFrame")
+local ToggleTemplate = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local UIGradient_15 = Instance.new("UIGradient")
+local Toggle_2 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Name_2 = Instance.new("TextLabel")
+local Change_5 = Instance.new("Frame")
+local Change_6 = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIGradient_16 = Instance.new("UIGradient")
+local Value_5 = Instance.new("TextBox")
+local UICorner_29 = Instance.new("UICorner")
+local UICorner_30 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Button = Instance.new("TextButton")
+local UIGradient_17 = Instance.new("UIGradient")
+local UICorner_31 = Instance.new("UICorner")
+local BasicScripts2 = Instance.new("Frame")
+local PlayAgain = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local UIGradient_18 = Instance.new("UIGradient")
+local Rejoin = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local UIGradient_19 = Instance.new("UIGradient")
+local FB = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local UIGradient_20 = Instance.new("UIGradient")
+local FL = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local UIGradient_21 = Instance.new("UIGradient")
+local CustomTemplate = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Esp = Instance.new("ScrollingFrame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local PlrESP = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local UIGradient_22 = Instance.new("UIGradient")
+local DoorESP = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local UIGradient_23 = Instance.new("UIGradient")
+local KeyESP = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local UIGradient_24 = Instance.new("UIGradient")
+local DmgDoorESP = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local UIGradient_25 = Instance.new("UIGradient")
+local GoldESP = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local UIGradient_26 = Instance.new("UIGradient")
+local POV = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local SeekPOV = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local UIGradient_27 = Instance.new("UIGradient")
+local RushPOV = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local UIGradient_28 = Instance.new("UIGradient")
+local AmbushPOV = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local UIGradient_29 = Instance.new("UIGradient")
+local F100POV = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local UIGradient_30 = Instance.new("UIGradient")
+local F50POV = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local UIGradient_31 = Instance.new("UIGradient")
+local EyesPOV = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
+local UIGradient_32 = Instance.new("UIGradient")
+local A60Pov = Instance.new("TextButton")
+local UICorner_47 = Instance.new("UICorner")
+local UIGradient_33 = Instance.new("UIGradient")
+local A120Pov = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
+local UIGradient_34 = Instance.new("UIGradient")
+local SeekPOV_2 = Instance.new("TextButton")
+local UICorner_49 = Instance.new("UICorner")
+local UIGradient_35 = Instance.new("UIGradient")
+local Credits = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local SepparateLine_2 = Instance.new("Frame")
+local Profile = Instance.new("ImageButton")
+local UICorner_50 = Instance.new("UICorner")
+local PlayerScripts = Instance.new("ImageButton")
+local UICorner_51 = Instance.new("UICorner")
+local SepparateLine_3 = Instance.new("Frame")
+local Settings_2 = Instance.new("ImageButton")
+local UICorner_52 = Instance.new("UICorner")
+local Info_2 = Instance.new("ImageButton")
+local UICorner_53 = Instance.new("UICorner")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local ShowUI = Instance.new("ImageButton")
+local UICorner_54 = Instance.new("UICorner")
 
-    local MainSection = Main:NewSection("Entity POV")
+--Properties:
 
-    local Credits = Window:NewTab("Credits")
+Lib.Name = "Lib"
+Lib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Lib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Lib.ResetOnSpawn = false
 
-    local CreditsSection = Credits:NewSection("Credits")
+Lib_2.Name = "Lib"
+Lib_2.Parent = Lib
+Lib_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lib_2.BackgroundTransparency = 1.000
+Lib_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lib_2.BorderSizePixel = 0
+Lib_2.Position = UDim2.new(0.30326876, 0, 0.248120308, 0)
+Lib_2.Size = UDim2.new(0, 650, 0, 402)
 
-    CreditsSection:NewLabel("Made by Jealousdummy on YT! Or toyniccubujori on roblox.") 
+LibFrame.Name = "LibFrame"
+LibFrame.Parent = Lib_2
+LibFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LibFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LibFrame.BorderSizePixel = 0
+LibFrame.Position = UDim2.new(0.0925014094, 0, 0.0855123028, 0)
+LibFrame.Size = UDim2.new(0, 528, 0, 332)
 
-    -- Script
+UICorner.Parent = LibFrame
 
-    MainSection:NewButton("Rush", "Rush POV.", function()
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Parent = LibFrame
 
-       game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("RushMoving", true).RushNew.CFrame end)
+SepparateLine.Name = "SepparateLine"
+SepparateLine.Parent = LibFrame
+SepparateLine.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine.BorderSizePixel = 0
+SepparateLine.Position = UDim2.new(0, 0, 0.135542169, 0)
+SepparateLine.Size = UDim2.new(0, 528, 0, 3)
 
- end)
+Close.Name = "Close"
+Close.Parent = LibFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 252, 252)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.888257682, 0, 0, 0)
+Close.Size = UDim2.new(0, 59, 0, 45)
+Close.Font = Enum.Font.GothamBold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
 
-MainSection:NewButton("Ambush", "Ambush POV.", function()
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("AmbushMoving", true).RushNew.CFrame end)
-end)
+UICorner_2.Parent = Close
 
-MainSection:NewButton("Figure[50]", "Figure POV.", function()
+Minimise.Name = "Minimise"
+Minimise.Parent = LibFrame
+Minimise.BackgroundColor3 = Color3.fromRGB(255, 252, 252)
+Minimise.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Minimise.BorderSizePixel = 0
+Minimise.Position = UDim2.new(0.76515162, 0, 0, 0)
+Minimise.Size = UDim2.new(0, 59, 0, 45)
+Minimise.Font = Enum.Font.GothamBold
+Minimise.Text = "-"
+Minimise.TextColor3 = Color3.fromRGB(0, 0, 0)
+Minimise.TextScaled = true
+Minimise.TextSize = 14.000
+Minimise.TextWrapped = true
 
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
+UICorner_3.Parent = Minimise
 
- end)
+Icon.Name = "Icon"
+Icon.Parent = LibFrame
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon.BorderSizePixel = 0
+Icon.Size = UDim2.new(0, 44, 0, 45)
+Icon.Image = "rbxassetid://7414445494"
 
-MainSection:NewButton("Figure[100]", "Figure POV.", function()
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_2.Parent = Icon
 
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame end)
+Title.Name = "Title"
+Title.Parent = LibFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0833336785, 0, 0, 0)
+Title.Size = UDim2.new(0, 360, 0, 45)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Doors Vitamin Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
 
- end)
-MainSection:NewButton("Eyes", "Eyes POV.", function()
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Eyes", true).Core.CFrame end)
- end)
+Tabs.Name = "Tabs"
+Tabs.Parent = LibFrame
+Tabs.Active = true
+Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs.BackgroundTransparency = 1.000
+Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(-0.00189393945, 0, 0.153614372, 0)
+Tabs.Size = UDim2.new(0, 165, 0, 241)
+Tabs.CanvasPosition = Vector2.new(0, 123)
 
-MainSection:NewButton("A60", "A60 POV.", function()
+UIListLayout.Parent = Tabs
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.00499999989, 0)
 
-       game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("A60", true).Main.CFrame end)
+TemplateButton.Name = "TemplateButton"
+TemplateButton.Parent = Tabs
+TemplateButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton.BorderSizePixel = 0
+TemplateButton.Position = UDim2.new(0.0696969703, 0, 0.0809859186, 0)
+TemplateButton.Size = UDim2.new(0, 142, 0, 47)
+TemplateButton.Font = Enum.Font.SourceSansBold
+TemplateButton.Text = "Basic Scripts"
+TemplateButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton.TextScaled = true
+TemplateButton.TextSize = 14.000
+TemplateButton.TextTransparency = 0.500
+TemplateButton.TextWrapped = true
 
- end)
+UICorner_4.Parent = TemplateButton
 
-MainSection:NewButton("A120", "A120 POV.", function()
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = TemplateButton
 
-       game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("A120", true).Main.CFrame end)
+TemplateButton_2.Name = "TemplateButton"
+TemplateButton_2.Parent = Tabs
+TemplateButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_2.BorderSizePixel = 0
+TemplateButton_2.Position = UDim2.new(0.0696969703, 0, 0.0809859186, 0)
+TemplateButton_2.Size = UDim2.new(0, 142, 0, 47)
+TemplateButton_2.Font = Enum.Font.SourceSansBold
+TemplateButton_2.Text = "ESP"
+TemplateButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_2.TextScaled = true
+TemplateButton_2.TextSize = 14.000
+TemplateButton_2.TextTransparency = 0.500
+TemplateButton_2.TextWrapped = true
 
- end)
+UICorner_5.Parent = TemplateButton_2
 
-MainSection:NewButton("Seek(Not for all executors)", "Seek POV.", function()
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = TemplateButton_2
 
-       game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
- end)
+TemplateButton_3.Name = "TemplateButton"
+TemplateButton_3.Parent = Tabs
+TemplateButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_3.BorderSizePixel = 0
+TemplateButton_3.Position = UDim2.new(0.0696969703, 0, 0.0809859186, 0)
+TemplateButton_3.Size = UDim2.new(0, 142, 0, 47)
+TemplateButton_3.Font = Enum.Font.SourceSansBold
+TemplateButton_3.Text = "POV"
+TemplateButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_3.TextScaled = true
+TemplateButton_3.TextSize = 14.000
+TemplateButton_3.TextTransparency = 0.500
+TemplateButton_3.TextWrapped = true
 
-local toggleState = false
-local player = game.Players.LocalPlayer
-local originalCFrame = workspace.CurrentCamera.CFrame
+UICorner_6.Parent = TemplateButton_3
 
-MainSection:NewToggle("ToggleText", "ToggleInfo", function(state)
-    toggleState = state
-    if toggleState then
-        game:GetService("RunService").RenderStepped:Connect(function()
-            if player.Character and player.Character:FindFirstChild("Head") then
-                workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
-            end
-        end)
-    else
-        workspace.CurrentCamera.CFrame = originalCFrame
-    end
-end)
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = TemplateButton_3
 
+TemplateButton_4.Name = "TemplateButton"
+TemplateButton_4.Parent = Tabs
+TemplateButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_4.BorderSizePixel = 0
+TemplateButton_4.Position = UDim2.new(0.0696969703, 0, 0.0809859186, 0)
+TemplateButton_4.Size = UDim2.new(0, 142, 0, 47)
+TemplateButton_4.Visible = false
+TemplateButton_4.Font = Enum.Font.SourceSansBold
+TemplateButton_4.Text = "Other Scripts"
+TemplateButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_4.TextScaled = true
+TemplateButton_4.TextSize = 14.000
+TemplateButton_4.TextTransparency = 0.500
+TemplateButton_4.TextWrapped = true
+
+UICorner_7.Parent = TemplateButton_4
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Parent = TemplateButton_4
+
+TemplateButton_5.Name = "TemplateButton"
+TemplateButton_5.Parent = Tabs
+TemplateButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_5.BorderSizePixel = 0
+TemplateButton_5.Position = UDim2.new(0.0696969703, 0, 0.0809859186, 0)
+TemplateButton_5.Size = UDim2.new(0, 142, 0, 47)
+TemplateButton_5.Font = Enum.Font.SourceSansBold
+TemplateButton_5.Text = "Credits"
+TemplateButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateButton_5.TextScaled = true
+TemplateButton_5.TextSize = 14.000
+TemplateButton_5.TextTransparency = 0.500
+TemplateButton_5.TextWrapped = true
+
+UICorner_8.Parent = TemplateButton_5
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_7.Parent = TemplateButton_5
+
+TabContent.Name = "TabContent"
+TabContent.Parent = LibFrame
+TabContent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabContent.BackgroundTransparency = 1.000
+TabContent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabContent.BorderSizePixel = 0
+TabContent.Position = UDim2.new(0.312499881, 0, 0.135541886, 0)
+TabContent.Size = UDim2.new(0, 362, 0, 287)
+
+Info.Name = "Info"
+Info.Parent = TabContent
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0, 0, 0.0104533872, 0)
+Info.Size = UDim2.new(0, 363, 0, 283)
+Info.Visible = false
+
+Username.Name = "Username"
+Username.Parent = Info
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.0420113541, 0, 0.077738516, 0)
+Username.Size = UDim2.new(0, 160, 0, 45)
+Username.Font = Enum.Font.SourceSansBold
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = Info
+ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.506887078, 0, 0.0318021215, 0)
+ImageLabel.Size = UDim2.new(0, 168, 0, 156)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_9.Parent = ImageLabel
+
+UserID.Name = "UserID"
+UserID.Parent = Info
+UserID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserID.BackgroundTransparency = 1.000
+UserID.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserID.BorderSizePixel = 0
+UserID.Position = UDim2.new(0.0420113541, 0, 0.219081268, 0)
+UserID.Size = UDim2.new(0, 160, 0, 45)
+UserID.Font = Enum.Font.SourceSansBold
+UserID.Text = "UserID"
+UserID.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserID.TextScaled = true
+UserID.TextSize = 14.000
+UserID.TextWrapped = true
+UserID.TextXAlignment = Enum.TextXAlignment.Left
+
+AccountAge.Name = "AccountAge"
+AccountAge.Parent = Info
+AccountAge.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AccountAge.BackgroundTransparency = 1.000
+AccountAge.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AccountAge.BorderSizePixel = 0
+AccountAge.Position = UDim2.new(0.0420113541, 0, 0.378091872, 0)
+AccountAge.Size = UDim2.new(0, 160, 0, 45)
+AccountAge.Font = Enum.Font.SourceSansBold
+AccountAge.Text = "AccountAge"
+AccountAge.TextColor3 = Color3.fromRGB(255, 255, 255)
+AccountAge.TextScaled = true
+AccountAge.TextSize = 14.000
+AccountAge.TextWrapped = true
+AccountAge.TextXAlignment = Enum.TextXAlignment.Left
+
+JID.Name = "JID"
+JID.Parent = Info
+JID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JID.BackgroundTransparency = 1.000
+JID.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JID.BorderSizePixel = 0
+JID.Position = UDim2.new(0.0420113541, 0, 0.636042416, 0)
+JID.Size = UDim2.new(0, 336, 0, 45)
+JID.Font = Enum.Font.SourceSansBold
+JID.Text = "JobID"
+JID.TextColor3 = Color3.fromRGB(255, 255, 255)
+JID.TextScaled = true
+JID.TextSize = 14.000
+JID.TextWrapped = true
+JID.TextXAlignment = Enum.TextXAlignment.Left
+
+IsPremium.Name = "IsPremium"
+IsPremium.Parent = Info
+IsPremium.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IsPremium.BackgroundTransparency = 1.000
+IsPremium.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IsPremium.BorderSizePixel = 0
+IsPremium.Position = UDim2.new(0.0420113541, 0, 0.795053005, 0)
+IsPremium.Size = UDim2.new(0, 336, 0, 45)
+IsPremium.Font = Enum.Font.SourceSansBold
+IsPremium.Text = "IsPremium?"
+IsPremium.TextColor3 = Color3.fromRGB(255, 255, 255)
+IsPremium.TextScaled = true
+IsPremium.TextSize = 14.000
+IsPremium.TextWrapped = true
+IsPremium.TextXAlignment = Enum.TextXAlignment.Left
+
+DisplayName.Name = "DisplayName"
+DisplayName.Parent = Info
+DisplayName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DisplayName.BackgroundTransparency = 1.000
+DisplayName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DisplayName.BorderSizePixel = 0
+DisplayName.Position = UDim2.new(0.51584053, 0, 0.583038867, 0)
+DisplayName.Size = UDim2.new(0, 160, 0, 15)
+DisplayName.Font = Enum.Font.SourceSansBold
+DisplayName.Text = "DisplayName"
+DisplayName.TextColor3 = Color3.fromRGB(255, 255, 255)
+DisplayName.TextScaled = true
+DisplayName.TextSize = 14.000
+DisplayName.TextWrapped = true
+
+BasicScripts.Name = "BasicScripts"
+BasicScripts.Parent = TabContent
+BasicScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BasicScripts.BackgroundTransparency = 1.000
+BasicScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BasicScripts.BorderSizePixel = 0
+BasicScripts.Position = UDim2.new(0, 0, 0.0104533872, 0)
+BasicScripts.Size = UDim2.new(0, 363, 0, 280)
+BasicScripts.Visible = false
+
+ResetCharacter.Name = "ResetCharacter"
+ResetCharacter.Parent = BasicScripts
+ResetCharacter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetCharacter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ResetCharacter.BorderSizePixel = 0
+ResetCharacter.Position = UDim2.new(0.0283746216, 0, 0.00955734216, 0)
+ResetCharacter.Size = UDim2.new(0, 346, 0, 47)
+ResetCharacter.Font = Enum.Font.SourceSansBold
+ResetCharacter.Text = "Force Reset Character"
+ResetCharacter.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetCharacter.TextScaled = true
+ResetCharacter.TextSize = 14.000
+ResetCharacter.TextTransparency = 0.500
+ResetCharacter.TextWrapped = true
+
+UICorner_10.Parent = ResetCharacter
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Parent = ResetCharacter
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = BasicScripts
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed.BorderSizePixel = 0
+WalkSpeed.Position = UDim2.new(0.0275482088, 0, 0.203571424, 0)
+WalkSpeed.Size = UDim2.new(0, 346, 0, 47)
+
+Change.Name = "Change"
+Change.Parent = WalkSpeed
+Change.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change.BorderSizePixel = 0
+Change.Size = UDim2.new(0, 200, 0, 47)
+Change.Font = Enum.Font.SourceSansBold
+Change.Text = "Change"
+Change.TextColor3 = Color3.fromRGB(0, 0, 0)
+Change.TextScaled = true
+Change.TextSize = 14.000
+Change.TextTransparency = 0.500
+Change.TextWrapped = true
+
+UICorner_11.Parent = Change
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Parent = Change
+
+Value.Name = "Value"
+Value.Parent = WalkSpeed
+Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value.BorderSizePixel = 0
+Value.Position = UDim2.new(0.578034699, 0, 0, 0)
+Value.Size = UDim2.new(0, 146, 0, 47)
+Value.Font = Enum.Font.SourceSansBold
+Value.PlaceholderText = "WalkSpeed"
+Value.Text = ""
+Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value.TextScaled = true
+Value.TextSize = 14.000
+Value.TextTransparency = 0.500
+Value.TextWrapped = true
+
+UICorner_12.Parent = Value
+
+UICorner_13.Parent = WalkSpeed
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = BasicScripts
+JumpPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Position = UDim2.new(0.0275482088, 0, 0.392857134, 0)
+JumpPower.Size = UDim2.new(0, 346, 0, 47)
+
+Change_2.Name = "Change"
+Change_2.Parent = JumpPower
+Change_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change_2.BorderSizePixel = 0
+Change_2.Size = UDim2.new(0, 200, 0, 47)
+Change_2.Font = Enum.Font.SourceSansBold
+Change_2.Text = "Change"
+Change_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Change_2.TextScaled = true
+Change_2.TextSize = 14.000
+Change_2.TextTransparency = 0.500
+Change_2.TextWrapped = true
+
+UICorner_14.Parent = Change_2
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Parent = Change_2
+
+Value_2.Name = "Value"
+Value_2.Parent = JumpPower
+Value_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value_2.BorderSizePixel = 0
+Value_2.Position = UDim2.new(0.578034699, 0, 0, 0)
+Value_2.Size = UDim2.new(0, 146, 0, 47)
+Value_2.Font = Enum.Font.SourceSansBold
+Value_2.PlaceholderText = "JumpPower"
+Value_2.Text = ""
+Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_2.TextScaled = true
+Value_2.TextSize = 14.000
+Value_2.TextTransparency = 0.500
+Value_2.TextWrapped = true
+
+UICorner_15.Parent = Value_2
+
+UICorner_16.Parent = JumpPower
+
+Gravity.Name = "Gravity"
+Gravity.Parent = BasicScripts
+Gravity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gravity.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gravity.BorderSizePixel = 0
+Gravity.Position = UDim2.new(0.0275482088, 0, 0.585714281, 0)
+Gravity.Size = UDim2.new(0, 346, 0, 47)
+
+Change_3.Name = "Change"
+Change_3.Parent = Gravity
+Change_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change_3.BorderSizePixel = 0
+Change_3.Size = UDim2.new(0, 200, 0, 47)
+Change_3.Font = Enum.Font.SourceSansBold
+Change_3.Text = "Change"
+Change_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Change_3.TextScaled = true
+Change_3.TextSize = 14.000
+Change_3.TextTransparency = 0.500
+Change_3.TextWrapped = true
+
+UICorner_17.Parent = Change_3
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Parent = Change_3
+
+Value_3.Name = "Value"
+Value_3.Parent = Gravity
+Value_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value_3.BorderSizePixel = 0
+Value_3.Position = UDim2.new(0.578034699, 0, 0, 0)
+Value_3.Size = UDim2.new(0, 146, 0, 47)
+Value_3.Font = Enum.Font.SourceSansBold
+Value_3.PlaceholderText = "Gravity"
+Value_3.Text = ""
+Value_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_3.TextScaled = true
+Value_3.TextSize = 14.000
+Value_3.TextTransparency = 0.500
+Value_3.TextWrapped = true
+
+UICorner_18.Parent = Value_3
+
+UICorner_19.Parent = Gravity
+
+FOV.Name = "FOV"
+FOV.Parent = BasicScripts
+FOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FOV.BorderSizePixel = 0
+FOV.Position = UDim2.new(0.0275482088, 0, 0.778571427, 0)
+FOV.Size = UDim2.new(0, 346, 0, 47)
+
+Change_4.Name = "Change"
+Change_4.Parent = FOV
+Change_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change_4.BorderSizePixel = 0
+Change_4.Size = UDim2.new(0, 200, 0, 47)
+Change_4.Font = Enum.Font.SourceSansBold
+Change_4.Text = "Change"
+Change_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Change_4.TextScaled = true
+Change_4.TextSize = 14.000
+Change_4.TextTransparency = 0.500
+Change_4.TextWrapped = true
+
+UICorner_20.Parent = Change_4
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_12.Parent = Change_4
+
+Value_4.Name = "Value"
+Value_4.Parent = FOV
+Value_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value_4.BorderSizePixel = 0
+Value_4.Position = UDim2.new(0.578034699, 0, 0, 0)
+Value_4.Size = UDim2.new(0, 146, 0, 47)
+Value_4.Font = Enum.Font.SourceSansBold
+Value_4.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Value_4.PlaceholderText = "FOV"
+Value_4.Text = ""
+Value_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_4.TextScaled = true
+Value_4.TextSize = 14.000
+Value_4.TextTransparency = 0.500
+Value_4.TextWrapped = true
+
+UICorner_21.Parent = Value_4
+
+UICorner_22.Parent = FOV
+
+Settings.Name = "Settings"
+Settings.Parent = TabContent
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.0110497242, 0, 0.0104529615, 0)
+Settings.Size = UDim2.new(0, 359, 0, 284)
+Settings.Visible = false
+
+Draggable.Name = "Draggable"
+Draggable.Parent = Settings
+Draggable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Draggable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Draggable.BorderSizePixel = 0
+Draggable.Position = UDim2.new(0.0168579444, 0, 0.0311267469, 0)
+Draggable.Size = UDim2.new(0, 346, 0, 47)
+
+UICorner_23.Parent = Draggable
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(7, 7, 7)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_13.Parent = Draggable
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Draggable
+Toggle.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.875722528, 0, 0.0851063803, 0)
+Toggle.Size = UDim2.new(0, 39, 0, 39)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextScaled = true
+Toggle.TextSize = 14.000
+Toggle.TextTransparency = 1.000
+Toggle.TextWrapped = true
+
+UICorner_24.CornerRadius = UDim.new(0, 10)
+UICorner_24.Parent = Toggle
+
+Name.Name = "Name"
+Name.Parent = Draggable
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Size = UDim2.new(0, 264, 0, 47)
+Name.Font = Enum.Font.SourceSansBold
+Name.Text = "Draggable"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextStrokeTransparency = 0.000
+Name.TextWrapped = true
+Name.TextXAlignment = Enum.TextXAlignment.Left
+
+IY.Name = "IY"
+IY.Parent = Settings
+IY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IY.BorderSizePixel = 0
+IY.Position = UDim2.new(0.0144469701, 0, 0.23490949, 0)
+IY.Size = UDim2.new(0, 346, 0, 47)
+IY.Font = Enum.Font.SourceSansBold
+IY.Text = "Load Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(0, 0, 0)
+IY.TextScaled = true
+IY.TextSize = 14.000
+IY.TextTransparency = 0.500
+IY.TextWrapped = true
+IY.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_25.Parent = IY
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_14.Parent = IY
+
+LicenseInfo.Name = "LicenseInfo"
+LicenseInfo.Parent = TabContent
+LicenseInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LicenseInfo.BackgroundTransparency = 1.000
+LicenseInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LicenseInfo.BorderSizePixel = 0
+LicenseInfo.Position = UDim2.new(0, 0, 0.0104529615, 0)
+LicenseInfo.Size = UDim2.new(0, 363, 0, 281)
+LicenseInfo.Visible = false
+
+TextLabel.Parent = LicenseInfo
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.220385671, 0, 0.0355871879, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Disclaimer!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = LicenseInfo
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0110192839, 0, 0.213523135, 0)
+TextLabel_2.Size = UDim2.new(0, 359, 0, 201)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "This UI Library has been made by JealousStudios. Every images belongs to their owners, however the style belongs to the team. Please do not steal any content, thank you for understanding, and yes your allowed to use this library but not pretend that you made it yourself."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TemplateFrame.Name = "TemplateFrame"
+TemplateFrame.Parent = TabContent
+TemplateFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateFrame.BackgroundTransparency = 1.000
+TemplateFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateFrame.BorderSizePixel = 0
+TemplateFrame.Position = UDim2.new(0, 0, 0.0104529615, 0)
+TemplateFrame.Size = UDim2.new(0, 363, 0, 281)
+TemplateFrame.Visible = false
+
+TemplateBtns.Name = "TemplateBtns"
+TemplateBtns.Parent = TabContent
+TemplateBtns.Active = true
+TemplateBtns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateBtns.BackgroundTransparency = 1.000
+TemplateBtns.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateBtns.BorderSizePixel = 0
+TemplateBtns.Position = UDim2.new(-0.0608618297, 0, 0.0348436311, 0)
+TemplateBtns.Size = UDim2.new(0, 408, 0, 276)
+TemplateBtns.Visible = false
+
+ToggleTemplate.Name = "ToggleTemplate"
+ToggleTemplate.Parent = TemplateBtns
+ToggleTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleTemplate.BorderSizePixel = 0
+ToggleTemplate.Position = UDim2.new(0.0300505552, 0, 0.0174334981, 0)
+ToggleTemplate.Size = UDim2.new(0, 343, 0, 47)
+
+UICorner_26.Parent = ToggleTemplate
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(7, 7, 7)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient_15.Parent = ToggleTemplate
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = ToggleTemplate
+Toggle_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Toggle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.BorderSizePixel = 0
+Toggle_2.Position = UDim2.new(0.875722528, 0, 0.0851063803, 0)
+Toggle_2.Size = UDim2.new(0, 39, 0, 39)
+Toggle_2.Font = Enum.Font.SourceSans
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextScaled = true
+Toggle_2.TextSize = 14.000
+Toggle_2.TextTransparency = 1.000
+Toggle_2.TextWrapped = true
+
+UICorner_27.CornerRadius = UDim.new(0, 10)
+UICorner_27.Parent = Toggle_2
+
+Name_2.Name = "Name"
+Name_2.Parent = ToggleTemplate
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_2.BorderSizePixel = 0
+Name_2.Size = UDim2.new(0, 264, 0, 47)
+Name_2.Font = Enum.Font.SourceSansBold
+Name_2.Text = "Name"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextStrokeTransparency = 0.000
+Name_2.TextWrapped = true
+Name_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Change_5.Name = "Change"
+Change_5.Parent = TemplateBtns
+Change_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change_5.BorderSizePixel = 0
+Change_5.Position = UDim2.new(0.0249097515, 0, 0.112773284, 0)
+Change_5.Size = UDim2.new(0, 346, 0, 47)
+
+Change_6.Name = "Change"
+Change_6.Parent = Change_5
+Change_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Change_6.BorderSizePixel = 0
+Change_6.Size = UDim2.new(0, 200, 0, 47)
+Change_6.Font = Enum.Font.SourceSansBold
+Change_6.Text = "Change"
+Change_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Change_6.TextScaled = true
+Change_6.TextSize = 14.000
+Change_6.TextTransparency = 0.500
+Change_6.TextWrapped = true
+
+UICorner_28.Parent = Change_6
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_16.Parent = Change_6
+
+Value_5.Name = "Value"
+Value_5.Parent = Change_5
+Value_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value_5.BorderSizePixel = 0
+Value_5.Position = UDim2.new(0.578034699, 0, 0, 0)
+Value_5.Size = UDim2.new(0, 146, 0, 47)
+Value_5.Font = Enum.Font.SourceSansBold
+Value_5.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Value_5.PlaceholderText = "thing"
+Value_5.Text = ""
+Value_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value_5.TextScaled = true
+Value_5.TextSize = 14.000
+Value_5.TextTransparency = 0.500
+Value_5.TextWrapped = true
+
+UICorner_29.Parent = Value_5
+
+UICorner_30.Parent = Change_5
+
+UIListLayout_2.Parent = TemplateBtns
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0.00999999978, 0)
+
+Button.Name = "Button"
+Button.Parent = TemplateBtns
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.0283746216, 0, 0.00955734216, 0)
+Button.Size = UDim2.new(0, 346, 0, 47)
+Button.Font = Enum.Font.SourceSansBold
+Button.Text = "Name"
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextTransparency = 0.500
+Button.TextWrapped = true
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_17.Parent = Button
+
+UICorner_31.Parent = Button
+
+BasicScripts2.Name = "BasicScripts2"
+BasicScripts2.Parent = TabContent
+BasicScripts2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BasicScripts2.BackgroundTransparency = 1.000
+BasicScripts2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BasicScripts2.BorderSizePixel = 0
+BasicScripts2.Position = UDim2.new(0, 0, 0.0104533872, 0)
+BasicScripts2.Size = UDim2.new(0, 363, 0, 280)
+BasicScripts2.Visible = false
+
+PlayAgain.Name = "PlayAgain"
+PlayAgain.Parent = BasicScripts2
+PlayAgain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayAgain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayAgain.BorderSizePixel = 0
+PlayAgain.Position = UDim2.new(0.0283746216, 0, 0.0917001963, 0)
+PlayAgain.Size = UDim2.new(0, 346, 0, 47)
+PlayAgain.Font = Enum.Font.SourceSansBold
+PlayAgain.Text = "PlayAgain"
+PlayAgain.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayAgain.TextScaled = true
+PlayAgain.TextSize = 14.000
+PlayAgain.TextTransparency = 0.500
+PlayAgain.TextWrapped = true
+
+UICorner_32.Parent = PlayAgain
+
+UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_18.Parent = PlayAgain
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = BasicScripts2
+Rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+Rejoin.Size = UDim2.new(0, 346, 0, 47)
+Rejoin.Font = Enum.Font.SourceSansBold
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextTransparency = 0.500
+Rejoin.TextWrapped = true
+
+UICorner_33.Parent = Rejoin
+
+UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_19.Parent = Rejoin
+
+FB.Name = "FB"
+FB.Parent = BasicScripts2
+FB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FB.BorderSizePixel = 0
+FB.Position = UDim2.new(0.0283746216, 0, 0.52384305, 0)
+FB.Size = UDim2.new(0, 346, 0, 47)
+FB.Font = Enum.Font.SourceSansBold
+FB.Text = "Full Bright"
+FB.TextColor3 = Color3.fromRGB(0, 0, 0)
+FB.TextScaled = true
+FB.TextSize = 14.000
+FB.TextTransparency = 0.500
+FB.TextWrapped = true
+
+UICorner_34.Parent = FB
+
+UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_20.Parent = FB
+
+FL.Name = "FL"
+FL.Parent = BasicScripts2
+FL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FL.BorderSizePixel = 0
+FL.Position = UDim2.new(0.0280000046, 0, 0.747142911, 0)
+FL.Size = UDim2.new(0, 346, 0, 47)
+FL.Font = Enum.Font.SourceSansBold
+FL.Text = "Force Leave"
+FL.TextColor3 = Color3.fromRGB(0, 0, 0)
+FL.TextScaled = true
+FL.TextSize = 14.000
+FL.TextTransparency = 0.500
+FL.TextWrapped = true
+
+UICorner_35.Parent = FL
+
+UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_21.Parent = FL
+
+CustomTemplate.Name = "CustomTemplate"
+CustomTemplate.Parent = TabContent
+CustomTemplate.Active = true
+CustomTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CustomTemplate.BackgroundTransparency = 1.000
+CustomTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CustomTemplate.BorderSizePixel = 0
+CustomTemplate.Position = UDim2.new(-0.0610000007, 0, 0.0350000001, 0)
+CustomTemplate.Size = UDim2.new(0, 408, 0, 276)
+CustomTemplate.Visible = false
+
+UIListLayout_3.Parent = CustomTemplate
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0.00999999978, 0)
+
+Esp.Name = "Esp"
+Esp.Parent = TabContent
+Esp.Active = true
+Esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Esp.BackgroundTransparency = 1.000
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(-0.0610000007, 0, 0.0350000001, 0)
+Esp.Size = UDim2.new(0, 408, 0, 276)
+Esp.Visible = false
+
+UIListLayout_4.Parent = Esp
+UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0.00999999978, 0)
+
+PlrESP.Name = "PlrESP"
+PlrESP.Parent = Esp
+PlrESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlrESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlrESP.BorderSizePixel = 0
+PlrESP.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+PlrESP.Size = UDim2.new(0, 346, 0, 47)
+PlrESP.Font = Enum.Font.SourceSansBold
+PlrESP.Text = "Player ESP"
+PlrESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlrESP.TextScaled = true
+PlrESP.TextSize = 14.000
+PlrESP.TextTransparency = 0.500
+PlrESP.TextWrapped = true
+
+UICorner_36.Parent = PlrESP
+
+UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_22.Parent = PlrESP
+
+DoorESP.Name = "DoorESP"
+DoorESP.Parent = Esp
+DoorESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoorESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DoorESP.BorderSizePixel = 0
+DoorESP.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+DoorESP.Size = UDim2.new(0, 346, 0, 47)
+DoorESP.Font = Enum.Font.SourceSansBold
+DoorESP.Text = "Door ESP"
+DoorESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoorESP.TextScaled = true
+DoorESP.TextSize = 14.000
+DoorESP.TextTransparency = 0.500
+DoorESP.TextWrapped = true
+
+UICorner_37.Parent = DoorESP
+
+UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_23.Parent = DoorESP
+
+KeyESP.Name = "KeyESP"
+KeyESP.Parent = Esp
+KeyESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyESP.BorderSizePixel = 0
+KeyESP.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+KeyESP.Size = UDim2.new(0, 346, 0, 47)
+KeyESP.Font = Enum.Font.SourceSansBold
+KeyESP.Text = "Key ESP"
+KeyESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeyESP.TextScaled = true
+KeyESP.TextSize = 14.000
+KeyESP.TextTransparency = 0.500
+KeyESP.TextWrapped = true
+
+UICorner_38.Parent = KeyESP
+
+UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_24.Parent = KeyESP
+
+DmgDoorESP.Name = "DmgDoorESP"
+DmgDoorESP.Parent = Esp
+DmgDoorESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DmgDoorESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DmgDoorESP.BorderSizePixel = 0
+DmgDoorESP.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+DmgDoorESP.Size = UDim2.new(0, 346, 0, 47)
+DmgDoorESP.Font = Enum.Font.SourceSansBold
+DmgDoorESP.Text = "Damaging Door ESP"
+DmgDoorESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+DmgDoorESP.TextScaled = true
+DmgDoorESP.TextSize = 14.000
+DmgDoorESP.TextTransparency = 0.500
+DmgDoorESP.TextWrapped = true
+
+UICorner_39.Parent = DmgDoorESP
+
+UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_25.Parent = DmgDoorESP
+
+GoldESP.Name = "GoldESP"
+GoldESP.Parent = Esp
+GoldESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GoldESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GoldESP.BorderSizePixel = 0
+GoldESP.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+GoldESP.Size = UDim2.new(0, 346, 0, 47)
+GoldESP.Font = Enum.Font.SourceSansBold
+GoldESP.Text = "Gold ESP"
+GoldESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoldESP.TextScaled = true
+GoldESP.TextSize = 14.000
+GoldESP.TextTransparency = 0.500
+GoldESP.TextWrapped = true
+
+UICorner_40.Parent = GoldESP
+
+UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_26.Parent = GoldESP
+
+POV.Name = "POV"
+POV.Parent = TabContent
+POV.Active = true
+POV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+POV.BackgroundTransparency = 1.000
+POV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+POV.BorderSizePixel = 0
+POV.Position = UDim2.new(-0.0610000007, 0, 0.0350000001, 0)
+POV.Size = UDim2.new(0, 408, 0, 276)
+POV.Visible = false
+POV.CanvasPosition = Vector2.new(0, 297.999969)
+
+UIListLayout_5.Parent = POV
+UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0.00999999978, 0)
+
+SeekPOV.Name = "SeekPOV"
+SeekPOV.Parent = POV
+SeekPOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SeekPOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SeekPOV.BorderSizePixel = 0
+SeekPOV.Position = UDim2.new(0.0539215691, 0, 0.581304371, 0)
+SeekPOV.Size = UDim2.new(0, 346, 0, 47)
+SeekPOV.Font = Enum.Font.SourceSansBold
+SeekPOV.Text = "Player POV [BUGGY]"
+SeekPOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+SeekPOV.TextScaled = true
+SeekPOV.TextSize = 14.000
+SeekPOV.TextTransparency = 0.500
+SeekPOV.TextWrapped = true
+
+UICorner_41.Parent = SeekPOV
+
+UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_27.Parent = SeekPOV
+
+RushPOV.Name = "RushPOV"
+RushPOV.Parent = POV
+RushPOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RushPOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RushPOV.BorderSizePixel = 0
+RushPOV.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+RushPOV.Size = UDim2.new(0, 346, 0, 47)
+RushPOV.Font = Enum.Font.SourceSansBold
+RushPOV.Text = "Rush POV"
+RushPOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+RushPOV.TextScaled = true
+RushPOV.TextSize = 14.000
+RushPOV.TextTransparency = 0.500
+RushPOV.TextWrapped = true
+
+UICorner_42.Parent = RushPOV
+
+UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_28.Parent = RushPOV
+
+AmbushPOV.Name = "AmbushPOV"
+AmbushPOV.Parent = POV
+AmbushPOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AmbushPOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AmbushPOV.BorderSizePixel = 0
+AmbushPOV.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+AmbushPOV.Size = UDim2.new(0, 346, 0, 47)
+AmbushPOV.Font = Enum.Font.SourceSansBold
+AmbushPOV.Text = "Ambush POV"
+AmbushPOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+AmbushPOV.TextScaled = true
+AmbushPOV.TextSize = 14.000
+AmbushPOV.TextTransparency = 0.500
+AmbushPOV.TextWrapped = true
+
+UICorner_43.Parent = AmbushPOV
+
+UIGradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_29.Parent = AmbushPOV
+
+F100POV.Name = "F100POV"
+F100POV.Parent = POV
+F100POV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F100POV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+F100POV.BorderSizePixel = 0
+F100POV.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+F100POV.Size = UDim2.new(0, 346, 0, 47)
+F100POV.Font = Enum.Font.SourceSansBold
+F100POV.Text = "Figure50 POV"
+F100POV.TextColor3 = Color3.fromRGB(0, 0, 0)
+F100POV.TextScaled = true
+F100POV.TextSize = 14.000
+F100POV.TextTransparency = 0.500
+F100POV.TextWrapped = true
+
+UICorner_44.Parent = F100POV
+
+UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_30.Parent = F100POV
+
+F50POV.Name = "F50POV"
+F50POV.Parent = POV
+F50POV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F50POV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+F50POV.BorderSizePixel = 0
+F50POV.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+F50POV.Size = UDim2.new(0, 346, 0, 47)
+F50POV.Font = Enum.Font.SourceSansBold
+F50POV.Text = "Figure100 POV"
+F50POV.TextColor3 = Color3.fromRGB(0, 0, 0)
+F50POV.TextScaled = true
+F50POV.TextSize = 14.000
+F50POV.TextTransparency = 0.500
+F50POV.TextWrapped = true
+
+UICorner_45.Parent = F50POV
+
+UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_31.Parent = F50POV
+
+EyesPOV.Name = "EyesPOV"
+EyesPOV.Parent = POV
+EyesPOV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EyesPOV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EyesPOV.BorderSizePixel = 0
+EyesPOV.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+EyesPOV.Size = UDim2.new(0, 346, 0, 47)
+EyesPOV.Font = Enum.Font.SourceSansBold
+EyesPOV.Text = "Eyes POV"
+EyesPOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+EyesPOV.TextScaled = true
+EyesPOV.TextSize = 14.000
+EyesPOV.TextTransparency = 0.500
+EyesPOV.TextWrapped = true
+
+UICorner_46.Parent = EyesPOV
+
+UIGradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_32.Parent = EyesPOV
+
+A60Pov.Name = "A60Pov"
+A60Pov.Parent = POV
+A60Pov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A60Pov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+A60Pov.BorderSizePixel = 0
+A60Pov.Position = UDim2.new(0.0283746216, 0, 0.305985928, 0)
+A60Pov.Size = UDim2.new(0, 346, 0, 47)
+A60Pov.Font = Enum.Font.SourceSansBold
+A60Pov.Text = "A60 POV"
+A60Pov.TextColor3 = Color3.fromRGB(0, 0, 0)
+A60Pov.TextScaled = true
+A60Pov.TextSize = 14.000
+A60Pov.TextTransparency = 0.500
+A60Pov.TextWrapped = true
+
+UICorner_47.Parent = A60Pov
+
+UIGradient_33.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_33.Parent = A60Pov
+
+A120Pov.Name = "A120Pov"
+A120Pov.Parent = POV
+A120Pov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A120Pov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+A120Pov.BorderSizePixel = 0
+A120Pov.Position = UDim2.new(0.0539215691, 0, 0.581304371, 0)
+A120Pov.Size = UDim2.new(0, 346, 0, 47)
+A120Pov.Font = Enum.Font.SourceSansBold
+A120Pov.Text = "A120 POV"
+A120Pov.TextColor3 = Color3.fromRGB(0, 0, 0)
+A120Pov.TextScaled = true
+A120Pov.TextSize = 14.000
+A120Pov.TextTransparency = 0.500
+A120Pov.TextWrapped = true
+
+UICorner_48.Parent = A120Pov
+
+UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_34.Parent = A120Pov
+
+SeekPOV_2.Name = "SeekPOV"
+SeekPOV_2.Parent = POV
+SeekPOV_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SeekPOV_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SeekPOV_2.BorderSizePixel = 0
+SeekPOV_2.Position = UDim2.new(0.0539215691, 0, 0.581304371, 0)
+SeekPOV_2.Size = UDim2.new(0, 346, 0, 47)
+SeekPOV_2.Font = Enum.Font.SourceSansBold
+SeekPOV_2.Text = "Seek POV [BUGGY]"
+SeekPOV_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SeekPOV_2.TextScaled = true
+SeekPOV_2.TextSize = 14.000
+SeekPOV_2.TextTransparency = 0.500
+SeekPOV_2.TextWrapped = true
+
+UICorner_49.Parent = SeekPOV_2
+
+UIGradient_35.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(66, 66, 66)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_35.Parent = SeekPOV_2
+
+Credits.Name = "Credits"
+Credits.Parent = TabContent
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 0.0104529615, 0)
+Credits.Size = UDim2.new(0, 363, 0, 281)
+Credits.Visible = false
+
+TextLabel_3.Parent = Credits
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.220385671, 0, 0.0355871879, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Credits"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 4, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Credits
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0110192839, 0, 0.213523135, 0)
+TextLabel_4.Size = UDim2.new(0, 359, 0, 201)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Made by Jealousdummy. "
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+SepparateLine_2.Name = "SepparateLine"
+SepparateLine_2.Parent = LibFrame
+SepparateLine_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine_2.BorderSizePixel = 0
+SepparateLine_2.Position = UDim2.new(0.312499881, 0, 0.138554305, 0)
+SepparateLine_2.Size = UDim2.new(0, 4, 0, 286)
+
+Profile.Name = "Profile"
+Profile.Parent = LibFrame
+Profile.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Profile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Profile.BorderSizePixel = 0
+Profile.Position = UDim2.new(0.231000006, 0, 0.901000023, 0)
+Profile.Size = UDim2.new(0, 30, 0, 30)
+Profile.Image = "rbxassetid://7992557358"
+
+UICorner_50.Parent = Profile
+
+PlayerScripts.Name = "PlayerScripts"
+PlayerScripts.Parent = LibFrame
+PlayerScripts.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerScripts.BorderSizePixel = 0
+PlayerScripts.Position = UDim2.new(0.163000003, 0, 0.901000023, 0)
+PlayerScripts.Size = UDim2.new(0, 30, 0, 30)
+PlayerScripts.Image = "rbxassetid://16531839998"
+
+UICorner_51.Parent = PlayerScripts
+
+SepparateLine_3.Name = "SepparateLine"
+SepparateLine_3.Parent = LibFrame
+SepparateLine_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SepparateLine_3.BorderSizePixel = 0
+SepparateLine_3.Position = UDim2.new(0, 0, 0.879999995, 0)
+SepparateLine_3.Size = UDim2.new(0, 168, 0, 3)
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = LibFrame
+Settings_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings_2.BorderSizePixel = 0
+Settings_2.Position = UDim2.new(0.0949999988, 0, 0.901000023, 0)
+Settings_2.Size = UDim2.new(0, 30, 0, 30)
+Settings_2.Image = "rbxassetid://16534367818"
+
+UICorner_52.Parent = Settings_2
+
+Info_2.Name = "Info"
+Info_2.Parent = LibFrame
+Info_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Info_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Info_2.BorderSizePixel = 0
+Info_2.Position = UDim2.new(0.0270000007, 0, 0.901000023, 0)
+Info_2.Size = UDim2.new(0, 30, 0, 30)
+Info_2.Image = "rbxassetid://16534647108"
+
+UICorner_53.Parent = Info_2
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = LibFrame
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+ShowUI.Name = "ShowUI"
+ShowUI.Parent = Lib
+ShowUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShowUI.BackgroundTransparency = 0.300
+ShowUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShowUI.BorderSizePixel = 0
+ShowUI.Position = UDim2.new(0, 170, 0, -47)
+ShowUI.Size = UDim2.new(0, 45, 0, 45)
+ShowUI.Image = "rbxassetid://16531467093"
+
+UICorner_54.CornerRadius = UDim.new(0, 50)
+UICorner_54.Parent = ShowUI
+
+-- Scripts:
+
+local function LXAWAC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		script.Parent.TextColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(LXAWAC_fake_script)()
+local function BSVLWDW_fake_script() -- Minimise.LocalScript 
+	local script = Instance.new('LocalScript', Minimise)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(159, 159, 159)
+		script.Parent.TextColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		script.Parent.TextColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.ShowUI.Visible = true
+	end)
+end
+coroutine.wrap(BSVLWDW_fake_script)()
+local function QGGLUC_fake_script() -- TemplateButton.LocalScript 
+	local script = Instance.new('LocalScript', TemplateButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.Parent.TabContent.BasicScripts2.Visible = true
+	end)
+	
+end
+coroutine.wrap(QGGLUC_fake_script)()
+local function VNITGAV_fake_script() -- TemplateButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TemplateButton_2)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.Parent.TabContent.Esp.Visible = true
+	end)
+	
+end
+coroutine.wrap(VNITGAV_fake_script)()
+local function PVHPJ_fake_script() -- TemplateButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TemplateButton_3)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.Parent.TabContent.POV.Visible = true
+	end)
+	
+end
+coroutine.wrap(PVHPJ_fake_script)()
+local function BYJBAL_fake_script() -- TemplateButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TemplateButton_5)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.Parent.TabContent.Credits.Visible = true
+	end)
+	
+end
+coroutine.wrap(BYJBAL_fake_script)()
+local function CXLT_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.Text = "Username: ".. p.Name
+end
+coroutine.wrap(CXLT_fake_script)()
+local function PDQQO_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	
+end
+coroutine.wrap(PDQQO_fake_script)()
+local function QYRIXX_fake_script() -- UserID.LocalScript 
+	local script = Instance.new('LocalScript', UserID)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.Text = "UserID: ".. p.UserId
+end
+coroutine.wrap(QYRIXX_fake_script)()
+local function FFWW_fake_script() -- AccountAge.LocalScript 
+	local script = Instance.new('LocalScript', AccountAge)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.Text = "Account Age: ".. p.AccountAge
+end
+coroutine.wrap(FFWW_fake_script)()
+local function WMWQP_fake_script() -- JID.LocalScript 
+	local script = Instance.new('LocalScript', JID)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.Text = "JobID: ".. game.JobId
+end
+coroutine.wrap(WMWQP_fake_script)()
+local function XUUKM_fake_script() -- IsPremium.LocalScript 
+	local script = Instance.new('LocalScript', IsPremium)
+
+	local p = game.Players.LocalPlayer
+	if p.MembershipType == Enum.MembershipType.Premium then
+		script.Parent.Text = "IsPremium: ".. "true"
+	else
+		script.Parent.Text = "IsPremium: ".. "false"
+	end
+end
+coroutine.wrap(XUUKM_fake_script)()
+local function EMMCFL_fake_script() -- DisplayName.LocalScript 
+	local script = Instance.new('LocalScript', DisplayName)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.Text = p.DisplayName
+end
+coroutine.wrap(EMMCFL_fake_script)()
+local function POYTK_fake_script() -- ResetCharacter.LocalScript 
+	local script = Instance.new('LocalScript', ResetCharacter)
+
+	local p = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		p.Character:WaitForChild("Humanoid").Health = 0
+	end)
+end
+coroutine.wrap(POYTK_fake_script)()
+local function QSTTPUG_fake_script() -- Change.LocalScript 
+	local script = Instance.new('LocalScript', Change)
+
+	local default = script.Parent.Text
+	local Player = game.Players.LocalPlayer
+	local TextBox = script.Parent.Parent.Value
+	local Speed = TextBox.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		Speed = TextBox.Text
+		wait(0.05)
+		
+		script.Parent.Text = "Changed speed at ".. Player.Name.. " to ".. Speed
+		wait(0.05)
+		script.Parent.Text = default
+		Player.Character:WaitForChild("Humanoid").WalkSpeed = Speed
+	end)
+end
+coroutine.wrap(QSTTPUG_fake_script)()
+local function MPICKX_fake_script() -- Change_2.LocalScript 
+	local script = Instance.new('LocalScript', Change_2)
+
+	local default = script.Parent.Text
+	local Player = game.Players.LocalPlayer
+	local TextBox = script.Parent.Parent.Value
+	local Jump = TextBox.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		Jump = TextBox.Text
+		wait(0.05)
+		
+		script.Parent.Text = "Changed jump power at ".. Player.Name.. " to ".. Jump
+		wait(0.05)
+		script.Parent.Text = default
+		Player.Character:WaitForChild("Humanoid").JumpPower = Jump
+	end)
+end
+coroutine.wrap(MPICKX_fake_script)()
+local function DMLH_fake_script() -- Change_3.LocalScript 
+	local script = Instance.new('LocalScript', Change_3)
+
+	local default = script.Parent.Text
+	local Player = game.Players.LocalPlayer
+	local TextBox = script.Parent.Parent.Value
+	local Gravity = TextBox.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		Gravity = TextBox.Text
+		wait(0.05)
+		
+		script.Parent.Text = "Changed gravity at ".. Player.Name.. " to ".. Gravity
+		wait(0.05)
+		script.Parent.Text = default
+		game.Workspace.Gravity = Gravity
+	end)
+end
+coroutine.wrap(DMLH_fake_script)()
+local function BVRSO_fake_script() -- Change_4.LocalScript 
+	local script = Instance.new('LocalScript', Change_4)
+
+	local default = script.Parent.Text
+	local Player = game.Players.LocalPlayer
+	local TextBox = script.Parent.Parent.Value
+	local FOV= TextBox.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		FOV = TextBox.Text
+		wait(0.05)
+		
+		script.Parent.Text = "Changed Field Of View at ".. Player.Name.. " to ".. FOV
+		wait(0.05)
+		script.Parent.Text = default
+		game.Workspace.Camera.FieldOfView = FOV
+	end)
+end
+coroutine.wrap(BVRSO_fake_script)()
+local function CLMMHW_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local p = false
+	
+	local function onClick()
+		if not p then
+			p = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			script.Parent.Parent.Parent.Parent.Parent.Parent.LibFrame.Draggable = true
+		else
+			p = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+			script.Parent.Parent.Parent.Parent.Parent.Parent.LibFrame.Draggable = false
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClick)
+	
+end
+coroutine.wrap(CLMMHW_fake_script)()
+local function YFJB_fake_script() -- IY.LocalScript 
+	local script = Instance.new('LocalScript', IY)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(YFJB_fake_script)()
+local function HYSJGTJ_fake_script() -- Toggle_2.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_2)
+
+	local p = false
+	
+	local function onClick()
+		if not p then
+			p = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			script.Parent.Parent.Parent.Parent.Parent.Parent.LibFrame.Draggable = true
+		else
+			p = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+			script.Parent.Parent.Parent.Parent.Parent.Parent.LibFrame.Draggable = false
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClick)
+	
+end
+coroutine.wrap(HYSJGTJ_fake_script)()
+local function VRCAF_fake_script() -- Change_6.LocalScript 
+	local script = Instance.new('LocalScript', Change_6)
+
+	local default = script.Parent.Text
+	local Player = game.Players.LocalPlayer
+	local TextBox = script.Parent.Parent.Value
+	local tbt = TextBox.Text
+	script.Parent.MouseButton1Click:Connect(function()
+		tbt = TextBox.Text
+	    wait(0.05)
+	end)
+end
+coroutine.wrap(VRCAF_fake_script)()
+local function DKKYTJX_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(DKKYTJX_fake_script)()
+local function VPTXV_fake_script() -- PlayAgain.LocalScript 
+	local script = Instance.new('LocalScript', PlayAgain)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.EntityInfo.PlayAgain:FireServer()
+	end)
+end
+coroutine.wrap(VPTXV_fake_script)()
+local function ICWU_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local TeleportService = game:GetService("TeleportService")
+		local Players = game:GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+	
+		local Rejoin = coroutine.create(function()
+			local Success, ErrorMessage = pcall(function()
+				TeleportService:Teleport(game.PlaceId, LocalPlayer)
+			end)
+	
+			if ErrorMessage and not Success then
+				warn(ErrorMessage)
+			end
+		end)
+	
+		
+		coroutine.resume(Rejoin)
+	end)
+	
+end
+coroutine.wrap(ICWU_fake_script)()
+local function HNMNM_fake_script() -- FB.LocalScript 
+	local script = Instance.new('LocalScript', FB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local lighting = game:GetService("Lighting");	lighting.Ambient = Color3.fromRGB(255, 255, 255);
+	
+		lighting.Brightness = 1;
+	
+		lighting.FogEnd = 1e10;
+	
+		for i, v in pairs(lighting:GetDescendants()) do
+	
+			if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+	
+				v.Enabled = false;
+	
+			end;
+	
+		end;
+	
+		lighting.Changed:Connect(function()
+	
+			lighting.Ambient = Color3.fromRGB(255, 255, 255);
+	
+			lighting.Brightness = 1;
+	
+			lighting.FogEnd = 1e10;
+	
+		end);
+	
+		spawn(function()
+	
+			local character = game:GetService("Players").LocalPlayer.Character;
+	
+			while wait() do
+	
+				repeat wait() until character ~= nil;
+	
+				if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+	
+					local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+	
+					headlight.Brightness = 1;
+	
+					headlight.Range = 9999;
+	
+				end;
+	
+			end;
+	
+		end);
+	
+	end)
+	
+	
+end
+coroutine.wrap(HNMNM_fake_script)()
+local function RMONTP_fake_script() -- FL.LocalScript 
+	local script = Instance.new('LocalScript', FL)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick()
+	end)
+	
+	
+end
+coroutine.wrap(RMONTP_fake_script)()
+local function TLVHC_fake_script() -- PlrESP.LocalScript 
+	local script = Instance.new('LocalScript', PlrESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local players = game.Players:GetPlayers() for i,v in pairs(players) do local esp = Instance.new("Highlight") esp.Name = v.Name esp.FillTransparency = 0 esp.FillColor = Color3.new(205, 98, 152) esp.OutlineColor = Color3.new(205, 98, 152) esp.OutlineTransparency = 0 esp.Parent = v.Character end
+	end)
+	
+end
+coroutine.wrap(TLVHC_fake_script)()
+local function CRYLXQ_fake_script() -- DoorESP.LocalScript 
+	local script = Instance.new('LocalScript', DoorESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function findKey(model)
+			for _, child in pairs(model:GetChildren()) do
+				if child.Name == "Door" then
+					local a = Instance.new("BillboardGui",child)
+					a.Name = "A"
+					a.Size = UDim2.new(1,0,1,0)
+					a.AlwaysOnTop = true
+					local b = Instance.new("TextLabel",a)
+					b.Text = "Door"
+					b.BackgroundTransparency = 1
+					b.BorderSizePixel = 0
+					b.Size = UDim2.new(1,0,1,0)
+					b.TextColor3 = Color3.new(0,255,0)
+					b.TextSize = 10
+				end
+				findKey(child)
+			end
+		end
+	
+	end)
+	
+end
+coroutine.wrap(CRYLXQ_fake_script)()
+local function WKLT_fake_script() -- KeyESP.LocalScript 
+	local script = Instance.new('LocalScript', KeyESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function findKey(model)
+			for _, child in pairs(model:GetChildren()) do
+				if child.Name == "Key" then
+					local a = Instance.new("BillboardGui",child)
+					a.Name = "A"
+					a.Size = UDim2.new(1,0,1,0)
+					a.AlwaysOnTop = true
+					local b = Instance.new("TextLabel",a)
+					b.Text = "Key"
+					b.BackgroundTransparency = 1
+					b.BorderSizePixel = 0
+					b.Size = UDim2.new(1,0,1,0)
+					b.TextColor3 = Color3.new(255,0,0)
+					b.TextSize = 10
+				end
+				findKey(child)
+			end
+		end
+	
+	end)
+	
+end
+coroutine.wrap(WKLT_fake_script)()
+local function DCDSXF_fake_script() -- DmgDoorESP.LocalScript 
+	local script = Instance.new('LocalScript', DmgDoorESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function findKey(model)
+			for _, child in pairs(model:GetChildren()) do
+				if child.Name == "DoorFake" then
+					local a = Instance.new("BillboardGui",child)
+					a.Name = "A"
+					a.Size = UDim2.new(1,0,1,0)
+					a.AlwaysOnTop = true
+					local b = Instance.new("TextLabel",a)
+					b.Text = "DoorFake"
+					b.BackgroundTransparency = 1
+					b.BorderSizePixel = 0
+					b.Size = UDim2.new(1,0,1,0)
+					b.TextColor3 = Color3.new(0,0,255)
+					b.TextSize = 10
+				end
+				findKey(child)
+			end
+		end
+	
+	end)
+	
+end
+coroutine.wrap(DCDSXF_fake_script)()
+local function HKRQ_fake_script() -- GoldESP.LocalScript 
+	local script = Instance.new('LocalScript', GoldESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function findKey(model)
+			for _, child in pairs(model:GetChildren()) do
+				if child.Name == "GoldPile" then
+					local a = Instance.new("BillboardGui",child)
+					a.Name = "A"
+					a.Size = UDim2.new(1,0,1,0)
+					a.AlwaysOnTop = true
+					local b = Instance.new("TextLabel",a)
+					b.Text = "GoldPile"
+					b.BackgroundTransparency = 1
+					b.BorderSizePixel = 0
+					b.Size = UDim2.new(1,0,1,0)
+					b.TextColor3 = Color3.new(0,0,255)
+					b.TextSize = 10
+				end
+				findKey(child)
+			end
+		end
+		end)
+	
+end
+coroutine.wrap(HKRQ_fake_script)()
+local function GVUKR_fake_script() -- SeekPOV.LocalScript 
+	local script = Instance.new('LocalScript', SeekPOV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local RunService = game:GetService("RunService")
+	
+		local function updateCamera()
+			if player.Character and player.Character:FindFirstChild("Head") then
+				workspace.CurrentCamera.CFrame = player.Character.Head.CFrame
+			end
+		end
+	
+		RunService.RenderStepped:Connect(updateCamera)
+	end)
+	
+end
+coroutine.wrap(GVUKR_fake_script)()
+local function LEQR_fake_script() -- RushPOV.LocalScript 
+	local script = Instance.new('LocalScript', RushPOV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("RushMoving", true).RushNew.CFrame
+			
+		end)
+	end)
+	
+end
+coroutine.wrap(LEQR_fake_script)()
+local function GVASFOY_fake_script() -- AmbushPOV.LocalScript 
+	local script = Instance.new('LocalScript', AmbushPOV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("AmbushMoving", true).RushNew.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(GVASFOY_fake_script)()
+local function HBTTS_fake_script() -- F100POV.LocalScript 
+	local script = Instance.new('LocalScript', F100POV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(HBTTS_fake_script)()
+local function FJQEXK_fake_script() -- F50POV.LocalScript 
+	local script = Instance.new('LocalScript', F50POV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(FJQEXK_fake_script)()
+local function LVWHE_fake_script() -- EyesPOV.LocalScript 
+	local script = Instance.new('LocalScript', EyesPOV)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("Eyes", true).Core.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(LVWHE_fake_script)()
+local function DMWSDV_fake_script() -- A60Pov.LocalScript 
+	local script = Instance.new('LocalScript', A60Pov)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("A60", true).Main.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(DMWSDV_fake_script)()
+local function XKYSCJF_fake_script() -- A120Pov.LocalScript 
+	local script = Instance.new('LocalScript', A120Pov)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("A120", true).Main.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(XKYSCJF_fake_script)()
+local function TYVKP_fake_script() -- SeekPOV_2.LocalScript 
+	local script = Instance.new('LocalScript', SeekPOV_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame end)
+			
+		end)
+	
+end
+coroutine.wrap(TYVKP_fake_script)()
+local function HJHHN_fake_script() -- LibFrame.Drag 
+	local script = Instance.new('LocalScript', LibFrame)
+
+	script.Parent.Active  = true
+end
+coroutine.wrap(HJHHN_fake_script)()
+local function XVXUOC_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.TabContent.Info.Visible = true
+	end)
+	
+end
+coroutine.wrap(XVXUOC_fake_script)()
+local function FLONR_fake_script() -- PlayerScripts.LocalScript 
+	local script = Instance.new('LocalScript', PlayerScripts)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.TabContent.BasicScripts.Visible = true
+	end)
+	
+end
+coroutine.wrap(FLONR_fake_script)()
+local function VNENSF_fake_script() -- Settings_2.LocalScript 
+	local script = Instance.new('LocalScript', Settings_2)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.TabContent.Settings.Visible = true
+	end)
+	
+end
+coroutine.wrap(VNENSF_fake_script)()
+local function QRPTBKB_fake_script() -- Info_2.LocalScript 
+	local script = Instance.new('LocalScript', Info_2)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		
+		script.Parent.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		local tabContentChildren = script.Parent.Parent.TabContent:GetChildren()
+		for _, child in ipairs(tabContentChildren) do
+			child.Visible = false
+		end
+		script.Parent.Parent.TabContent.LicenseInfo.Visible = true
+	end)
+	
+end
+coroutine.wrap(QRPTBKB_fake_script)()
+local function FJJMCTD_fake_script() -- ShowUI.LocalScript 
+	local script = Instance.new('LocalScript', ShowUI)
+
+	script.Parent.Visible = false
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Lib.LibFrame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(FJJMCTD_fake_script)()
+local function EOBV_fake_script() -- Lib.LocalScript 
+	local script = Instance.new('LocalScript', Lib)
+
+	local gs = game:GetService("GuiService")
+	
+	gs.MenuOpened:Connect(function()
+		script.Parent.Parent.Lib.Lib.Visible = false
+	end)
+	
+	gs.MenuClosed:Connect(function()
+		script.Parent.Parent.Lib.Lib.Visible = true
+	end)
+	
+end
+coroutine.wrap(EOBV_fake_script)()
